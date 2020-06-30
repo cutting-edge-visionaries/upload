@@ -5,25 +5,36 @@
       <meta name="viewport" content="width=device-width" />
       <title>Upload files using the GitHub APIs</title>
       <link rel="stylesheet" href="css/style.css" />
+      <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
    </head>
    <body>
-      <h1>Upload files using the GitHub APIs</h1>
+      
+<div class="uk-card uk-card-hover uk-card-body">
+    <div class="uk-card-header uk-align-center">
+	<h3 class="uk-card-title">Upload Files to CEV Aryavarta Resource Repository</h3>
+    </div>
 
       <form action="/" method="POST">
          <label for="file">Select one or more files:</label>
-         <input name="file" id="file" type="file" multiple />
-         <label for="commit-title">Commit title:</label>
-         <input id="commit-title" name="commit-title" type="text" />
-         <input type="submit" />
+         <input class="uk-button uk-button-default uk-align-center" name="file" id="file" type="file" multiple />
+         <label for="commit-title uk-align-center">Commit title:</label>
+         <input id="commit-title uk-align-center" name="commit-title" type="text" />
+         <input class="uk-button uk-button-primary uk-align-center" type="submit" />
       </form>
+      
+      <div class="uk-card-media-bottom">
+	<img src="https://www.cevgroup.org/wp-content/uploads/2020/06/cev_logo_01-3.png" alt="">
+      </div>
+
+</div>
 
       <small class="author">
-         Demo created by <a href="http://www.audero.it">Aurelio De Rosa</a>
-         (<a href="https://twitter.com/AurelioDeRosa">@AurelioDeRosa</a>).
-         This demo is part of
-         <a href="http://www.audero.it/blog/2015/10/16/upload-files-on-github-using-github-js" target="_blank">
-            an article I've written for my blog
-         </a>.
+         This code is forked from <a class="uk-button uk-button-link" href="https://github.com/AurelioDeRosa/upload-files-github.js">https://github.com/AurelioDeRosa/upload-files-github.js</a>
       </small>
 
       <script src="dist.js" defer async></script>

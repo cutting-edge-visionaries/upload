@@ -2,13 +2,19 @@
 
 var GitHub = require('./github');
 var config = {
-   username: 'YOUR_USERNAME',
-   password: 'YOUR_PASSWORD', // Either your password or an authentication token if two-factor authentication is enabled
+   username: 'cutting-edge-visionaries',
+   password: '3fc35144f7ea4f69d6b4f1b645f0e83ac4dacbde', // Either your password or an authentication token if two-factor authentication is enabled
    auth: 'basic',
-   repository: 'A_REPOSITORY_NAME',
+   repository: 'Resources',
    branchName: 'master'
 };
 var gitHub = new GitHub(config);
+
+// var reposi = GitHub.getRepo('cutting-edge-visionaries', 'IoT');
+
+
+
+console.log(GitHub);
 
 /**
  * Reads the content of the file provided. Returns a promise whose resolved value is an object literal containing the
