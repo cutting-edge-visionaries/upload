@@ -5,7 +5,7 @@ var config = {
    username: 'cutting-edge-visionaries',
    password: '3fc35144f7ea4f69d6b4f1b645f0e83ac4dacbde', // Either your password or an authentication token if two-factor authentication is enabled
    auth: 'basic',
-   repository: 'Resources',
+   repository: 'AryavartaResources',
    branchName: 'master'
 };
 var gitHub = new GitHub(config);
